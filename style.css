@@ -1,0 +1,38 @@
+header {
+    margin: 0;
+}
+#logo {
+    float: left;
+    width: 25%;
+}
+nav {
+    float: right;
+    width: 75%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+}
+
+nav li {
+    display: inline;
+}
+
+li a {
+    text-decoration: none;
+    display: inline;
+}
+
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    padding: 0 1em;
+}
+
+
+
+
+main {
+    clear: both;
+}
