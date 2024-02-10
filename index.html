@@ -22,9 +22,106 @@
     <main>
         <br>
 
-        <div id="sidebar"></div>
+        <div class="sidebar">
+            <form class="form">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <div>
+                        <p>
+                            <label for="fullName">Full name:</label>
+                            <input type="text" name="fullName" id="fullName" required>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="email">Email address:</label>
+                            <input type="text" name="email" id="email" required>
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" rows="5" cols="30"></textarea>
+                        </p>
+                    </div>
+                    <div>
+                        <input type="submit">
+                    </div>
+                </fieldset>
+            </form>
+            <div class="calendar">
+                <h2 class="month">February</h2>
+                <div class="current-month">
+                    <ul class="week-days">
+                        <li>MON</li>
+                        <li>TUE</li>
+                        <li>WED</li>
+                        <li>THU</li>
+                        <li>FRI</li>
+                        <li>SAT</li>
+                        <li>SUN</li>
+                    </ul>
 
-        <div id="container">
+                    <div class="weeks">
+                        <div class="first">
+                            <span class="other-month">28</span>
+                            <span class="other-month">29</span>
+                            <span class="other-month">30</span>
+                            <span class="other-month">31</span>
+                            <span>01</span>
+                            <span>02</span>
+                            <span>03</span>
+                        </div>
+
+                        <div class="second">
+                            <span>04</span>
+                            <span>05</span>
+                            <span>06</span>
+                            <span>07</span>
+                            <span>08</span>
+                            <span>09</span>
+                            <span>10</span>
+                        </div>
+
+                        <div class="third">
+                            <span>11</span>
+                            <span>12</span>
+                            <span>13</span>
+                            <span>14</span>
+                            <span>15</span>
+                            <span>16</span>
+                            <span>17</span>
+                        </div>
+
+                        <div class="fourth">
+                            <span>18</span>
+                            <span>19</span>
+                            <span>20</span>
+                            <span>21</span>
+                            <span>22</span>
+                            <span>23</span>
+                            <span>24</span>
+                        </div>
+
+                        <div class="fifth">
+                            <span>25</span>
+                            <span>26</span>
+                            <span>27</span>
+                            <span>28</span>
+                            <span>29</span>
+                            <span class="other-month">1</span>
+                            <span class="other-month">2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rss">
+                <h2>SuperBowl LVIII</h2>
+                <p>The 2024 Superbowl will take place on February 10th at 6:30pm ETA. This game will be between the San Francisco 49ers and the Kansas City Chiefs.  </p>
+            </div>
+        </div>
+
+        <div class="container">
             <h1>5 Things to Know About Rattlesnakes and Their Babies</h1>
             <p>UA College of Pharmacy | Aug. 6, 2014</p>
             <p>Arguably, snake season is year-round in Arizona, a state
@@ -73,7 +170,7 @@
     </main>
 
     <hr>
-    <ul>
+    <ul class="bottom-nav">
         <li>
             <a href="index.html">Home Page</a>
         </li>

@@ -7,53 +7,157 @@
 </head>
 <body>
 
-    <img src="UniversityLogo.png" alt="Logo of The University of Arizona">
-    <span>
-        <a href="index.html">Home Page</a> |
-        <a href="hometown.html">Visit My Hometown Page</a> |
-        <a href="gallery.html">See My Photo Gallery</a> |
-        <a href="poem.html">Poem By Emily Dickinson</a> |
-    </span>
-    <br>
-
-    <h1> Olney, MD</h1>
-    <section>
-        <h2>Location</h2>
-        <p>
-            Located about 10 miles north of DC.
-        </p>
-    </section>
-
-    <section>
-        <h2>About</h2>
-        <section>
-            <h3>Weather</h3>
-            <p>
-                It is hottest in July (between 70 and 90 degrees) and coldest in January (between 25 and 40 degrees).
-            </p>
-        </section>
-        <section>
-            <h3>Population</h3>
-            <p>
-                Around 35,350 people live in Olney, MD.
-            </p>
-        </section>
-        <section>
-            <h3>Sports</h3>
-            <p>
-                Football and lacrosse are popular sports in Olney.
-            </p>
-        </section>
-    </section>
-
-    <section>
-        <h2>Things To Do</h2>
+<header>
+    <img id="logo" src="UniversityLogo.png" alt="Logo of The University of Arizona">
+    <nav>
         <ul>
-            <li>Take a day trip to DC</li>
-            <li>Go to the indoor pool</li>
-            <li>Go to The Adventure Park ropes course</li>
+            <li><a href="index.html">Home Page</a> |</li>
+            <li><a href="hometown.html">Visit My Hometown Page</a> |</li>
+            <li><a href="gallery.html">See My Photo Gallery</a> |</li>
+            <li><a href="poem.html">Poem By Emily Dickinson</a></li>
         </ul>
-    </section>
+    </nav>
+</header>
+<main>
 
+    <div class="sidebar">
+        <form class="form">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <div>
+                    <p>
+                        <label for="fullName">Full name:</label>
+                        <input type="text" name="fullName" id="fullName" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="email">Email address:</label>
+                        <input type="text" name="email" id="email" required>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" rows="5" cols="30"></textarea>
+                    </p>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+        <div class="calendar">
+            <h2 class="month">February</h2>
+            <div class="current-month">
+                <ul class="week-days">
+                    <li>MON</li>
+                    <li>TUE</li>
+                    <li>WED</li>
+                    <li>THU</li>
+                    <li>FRI</li>
+                    <li>SAT</li>
+                    <li>SUN</li>
+                </ul>
+
+                <div class="weeks">
+                    <div class="first">
+                        <span class="other-month">28</span>
+                        <span class="other-month">29</span>
+                        <span class="other-month">30</span>
+                        <span class="other-month">31</span>
+                        <span>01</span>
+                        <span>02</span>
+                        <span>03</span>
+                    </div>
+
+                    <div class="second">
+                        <span>04</span>
+                        <span>05</span>
+                        <span>06</span>
+                        <span>07</span>
+                        <span>08</span>
+                        <span>09</span>
+                        <span>10</span>
+                    </div>
+
+                    <div class="third">
+                        <span>11</span>
+                        <span>12</span>
+                        <span>13</span>
+                        <span>14</span>
+                        <span>15</span>
+                        <span>16</span>
+                        <span>17</span>
+                    </div>
+
+                    <div class="fourth">
+                        <span>18</span>
+                        <span>19</span>
+                        <span>20</span>
+                        <span>21</span>
+                        <span>22</span>
+                        <span>23</span>
+                        <span>24</span>
+                    </div>
+
+                    <div class="fifth">
+                        <span>25</span>
+                        <span>26</span>
+                        <span>27</span>
+                        <span>28</span>
+                        <span>29</span>
+                        <span class="other-month">1</span>
+                        <span class="other-month">2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rss">
+            <h2>SuperBowl LVIII</h2>
+            <p>The 2024 Superbowl will take place on February 10th at 6:30pm ETA. This game will be between the San Francisco 49ers and the Kansas City Chiefs.  </p>
+        </div>
+    </div>
+    <div class="container">
+        <h1> Olney, MD</h1>
+        <section>
+            <h2>Location</h2>
+            <p>
+                Located about 10 miles north of DC.
+            </p>
+        </section>
+
+        <section>
+            <h2>About</h2>
+            <section>
+                <h3>Weather</h3>
+                <p>
+                    It is hottest in July (between 70 and 90 degrees) and coldest in January (between 25 and 40 degrees).
+                </p>
+            </section>
+            <section>
+                <h3>Population</h3>
+                <p>
+                    Around 35,350 people live in Olney, MD.
+                </p>
+            </section>
+            <section>
+                <h3>Sports</h3>
+                <p>
+                    Football and lacrosse are popular sports in Olney.
+                </p>
+            </section>
+        </section>
+
+        <section>
+            <h2>Things To Do</h2>
+            <ul>
+                <li>Take a day trip to DC</li>
+                <li>Go to the indoor pool</li>
+                <li>Go to The Adventure Park ropes course</li>
+            </ul>
+        </section>
+    </div>
+</main>
 </body>
 </html>

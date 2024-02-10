@@ -1,13 +1,24 @@
+main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas:
+                "logo nav"
+                "side container"
+                "foot foot";
+}
+
 header {
     margin: 0;
+    grid-area: head;
 }
+
 #logo {
     float: left;
-    width: 25%;
+    grid-area: logo;
 }
 nav {
     float: right;
-    width: 75%;
+    grid-area: nav;
 }
 
 nav ul {
@@ -15,7 +26,7 @@ nav ul {
     text-align: right;
 }
 
-nav li {
+nav li, .bottom-nav li {
     display: inline;
 }
 
@@ -24,15 +35,109 @@ li a {
     display: inline;
 }
 
+.bottom-nav li {
+    padding: 0 3%;
+}
+.bottom-nav {
+    text-align: center;
+}
+
+main {
+    clear: both;
+}
+
+.sidebar {
+    grid-area: side;
+    background-color: lightgray;
+    padding: 10px;
+    display: flex;
+    flex: 0 1 auto;
+
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.container {
+    grid-area: container;
+    padding: 10px;
+}
+
+.form, .rss, .calendar {
+    display: inline-block;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+footer {
+    grid-area: foot;
+}
+
 footer p {
     font-size: 0.75em;
     text-align: center;
     padding: 0 1em;
 }
 
+.calendar {
+    background-color: #5f7285;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #333131;
+}
 
+.month {
+    padding: 2%;
+    margin: 0;
+    color: #1f1f1f;
+}
 
+.week-days {
+    color: #dfebed;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 3%;
+    list-style-type: none;
+    background-color: #8e9eaf;
+    margin-top: 0;
+    margin-bottom: 1%;
+}
 
-main {
-    clear: both;
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.weeks {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2%;
+}
+
+.weeks div {
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+}
+
+.weeks span {
+    padding: 10px;
+}
+
+.other-month {
+    color: #9a9a9a;
+}
+
+form {
+    max-width: 90%;
+
+}
+input, textarea {
+    background-color: lightgray;
 }
